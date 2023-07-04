@@ -1,0 +1,12 @@
+body {
+    background: black;
+}
+
+*{
+    color: rgb(245, 239, 239);
+}
+
+
+#Update{
+    display: none;
+}
