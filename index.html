@@ -10,7 +10,61 @@
 
 <body>
 
- 
+    <div class="container">
+        <h2 class="mt-5 mb-5">CRUD APP GAMER </h2>
+        <div class="mb-5" >
+            <div class="row">
+                <div class="form-grupo col-md-6 mb-3">
+                    <label for="nombre">Titulo</label>
+                    <input type="text" nombre="nombre"
+                    class="form-control" id="nombre"
+                    placeholder="Titulo del juego">
+                </div>
+                <div class="form-grupo col-md-6 mb-3">
+                    <label for="nombre">Consola</label>
+                    <input type="text" nombre="nombre"
+                    class="form-control" id="nombre"
+                    placeholder="Tipo de consola">
+                </div>
+                <div class="form-grupo col-md-6 mb-3">
+                    <label for="nombre">Precio</label>
+                    <input type="number" nombre="nombre"
+                    class="form-control" id="nombre"
+                    placeholder="Rango de precio">
+                </div>
+                <div class="form-grupo col-md-6 mb-3">
+                    <label for="nombre">Tipo de estilo</label>
+                    <input type="text" nombre="nombre"
+                    class="form-control" id="nombre"
+                    placeholder="Accion, Aventura, Guerra...">
+                </div>
+                    <div class="col-lg-12 mt-5">
+                        <button class="btn btn-success" id="submit" onclick="AgregarDatos()">Agregar Datos</button>
+
+                        <button class="btn btn-primary" id="Actualizar" onclick="actualizar()">Actualizar</button>
+                    </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row mt-5">
+            <div class="col-12">
+                <table class="table table-bordered" id="crudTable">
+                    <thead>
+                        <tr>
+                            <th>Titulo</th>
+                            <th>Consola</th>
+                            <th>Precio</th>
+                            <th>Tipo de estilo</th>
+                        </tr>
+                    </thead>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+
+
     <script src="script.js"></script>
 </body>
 </html>
