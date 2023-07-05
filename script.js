@@ -1,4 +1,5 @@
 //Validate form inputs before submiting data
+
 function validateForm(){
     var titulo = document.getElementById("titulo").value; 
     var consola = document.getElementById("consola").value; 
@@ -41,7 +42,7 @@ function showData(){
         peopleList = JSON.parse(localStorage.getItem("peopleList"))
     }
 
-    var html ="";
+    var html = "";
 
     peopleList.forEach(function (element, index){
         html += "<tr>";
@@ -49,13 +50,10 @@ function showData(){
         html += "<td>" + element.consola + "</td>";
         html += "<td>" + element.precio + "</td>";
         html += "<td>" + element.clasificacion + "</td>";
-        html +=
-
-        '<td><button onclick="deleteData('+ 
+        html += 
+        '<td><button onclick="deleteData(' + 
         index +
-        ')" class="btn btn-danger">Delete</button><buttononclick = "updateData (' +
-        index +
-        ')" class="btn btn-warning m-2">Edit</button></td>';
+        ')" class="btn btn-danger">Delete</button><button onclick = "updateData ( ' +index +')" class="btn btn-warning m-2">Edit</button></td>';
 
      html +="</tr>";       
     });
@@ -65,6 +63,7 @@ function showData(){
 }
 
 //Loads All data when document or page loaded
+
 document.onload = showData();
 
 //Function to add data
