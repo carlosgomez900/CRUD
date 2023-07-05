@@ -105,7 +105,7 @@ function AddData(){
 
 //function to delete Date form local storage
 
-function deleteData(index)
+function deleteData(index){
     var peopleList;
     if(localStorage.getItem("peopleList") == null) {
         peopleList = [];
